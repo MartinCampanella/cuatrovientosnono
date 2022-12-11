@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuatro Vientos Nono</title>
+    <!-- GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- BOOSTRAP 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- FONT AWSOME -->
+    <script src="https://kit.fontawesome.com/3c6be4fdbc.js" crossorigin="anonymous"></script>
+    <!-- ICONIFY -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163331244-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-163331244-1');
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.ico"/>
+
+</head>
+<body>
+    
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cuatro Vientos Nono</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#carousel">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#descripcion">Lugar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cabanas">Cabañas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--CAROUSEL-->
+
+    <div id="carousel" class="carousel slide pt-5 data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+            <li data-target="#carousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/img/carrousel/1.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+          </div>
+          <div class="carousel-item">
+            <img src="static/img/carrousel/2.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+          </div>
+          <div class="carousel-item">
+            <img src="static/img/carrousel/3.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+          </div>
+          <div class="carousel-item">
+            <img src="static/img/carrousel/4.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+          </div>
+            <div class="carousel-item">
+                <img src="static/img/carrousel/5.jpg" class="d-block img-fluid" alt=”responsive image” style="margin-top: auto;">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--DESCRIPCION-->
+      
+    <section id="descripcion">
+        <div class="container mt-5">
+            <h2 style="text-align: center;">Nuestro lugar</h2>
+            <hr>
+            <div class="row" style="padding-bottom: 2%">
+                <div class="col-md-12 col-sm-12 col-12">
+                    <h4>Cuatro Vientos es una quinta familiar que se encuentra en Nono, Traslasierra, Cordoba, ubicada en Avenida Los Porteños y calle San Francisco, en dirección al museo Rocsen.</h4>
+                    <h4>Está a 100 metros de dos Balnearios: Los Remansos y Vado de San Isidro, es decir a 100 metros del Rio Chico de Nono y del arroyo Los Sanjuaninos, en la zona de &quot;La Quinta&quot;.</h4>
+                    <h4>El predio cuenta con una hectárea y media de parque con una hermosa vista a las Altas Cumbres. Un lugar donde se disfruta la tranquilidad y la naturaleza.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-12 text-center">
+                    <button id="botonGaleriaPredio" class="btn btn-lg btn-info" data-toggle="modal" data-target="#predio-fotos-modal">Ver imagenes del lugar</button>
+                </div>
+                <div class="col-md-6 col-sm-6 col-12 text-center">
+                    <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#rio-fotos-modal">Ver imagenes de los balnearios</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SERVICIOS-->
+      
+    <section id="servicios">
+        <div class="container mt-5">
+            <h2 style="text-align: center;">Nuestros servicios</h2>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-wifi fa-5x"></i>
+                        </div>
+                        <h4>WIFI</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-tv fa-5x"></i>
+                        </div>
+                        <h4>TV Satelital</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <span class="iconify" data-icon="fe:kitchen-cooker" data-width="80" data-height="80"></span>
+                        </div>
+                        <h4>Cocina horno y microondas</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <span class="iconify" data-icon="iconoir:bbq" data-width="80" data-height="80"></span>
+                        </div>
+                        <h4>Parrilla</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-baby fa-5x"></i>
+                        </div>
+                        <h4>Cuna</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-vault fa-5x"></i>
+                        </div>
+                        <h4>Caja de seguridad</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-person-swimming fa-5x"></i>
+                        </div>
+                        <h4>Pileta</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-car fa-5x"></i>
+                        </div>
+                        <h4>Estacionamiento cubierto</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-bed fa-5x"></i>
+                        </div>
+                        <h4>Ropa de cama, toallas y toallones</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-dog fa-5x"></i>
+                        </div>
+                        <h4>Aceptamos mascotas con previo aviso</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-mug-hot fa-5x"></i>
+                        </div>
+                        <h4>Desayuno casero (Opcional)</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 width-50">
+                    <div class="service-details text-center">
+                        <div class="service-image">
+                            <i class="fas fa-umbrella-beach fa-5x"></i>
+                        </div>
+                        <h4>A 100 metros del rio</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CABAÑAS-->
+
+    <section id="cabanas" style="padding-bottom: 40px;">
+        <div class="container-fluid mt-5">
+            <h2 style="padding-top: 10px;text-align: center;">Nuestras cabañas</h2>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="cabana-image">
+                        <a data-toggle="modal" data-target="#cabana-1-principal-modal">
+                            <img class="cabana-image" src="static/img/cabana1.jpg" style="width: 100%;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h2>Cabaña 1 y 4</h2>
+                    <p>La casa, de 60 m2 mas una galería de 3 x 7.70 metros, cuenta con dos dormitorios, uno matrimonial y otro con tres camas. Baño con antebaño, cocina completa con toda la vajilla necesaria, heladera con freezer, microondas, cafetera y cocina con horno a gas. Estar comedor, TV Led con DVD (películas a disposición) y Direct TV. Galería grande con parrilla y aparte cuenta con una cochera cubierta. Acondicionada con ventiladores de techo en todos los ambientes. Mosquiteros en todas las ventanas y caja de seguridad.</p>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <p>Capacidad: de 2 hasta 6 personas</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                        </div>
+                    </div>
+                    <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#cabana-1-fotos-modal">Ver imagenes</button>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="cabana-image">
+                        <a data-toggle="modal" data-target="#cabana-2-principal-modal">
+                            <img class="cabana-image" src="static/img/cabana2.jpg" style="width: 100%;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h2>Cabaña 2 y 3</h2>
+                    <p>La casa de 52 m2, cuenta con un dormitorio matrimonial, estar (con divan cama de dos camas), cocina, baño con antebaño, galeria y aparte cochera cubierta. La cocina equipada y completa con toda la vajilla necesaria, heladera con freezer, microondas, cafetera y cocina con horno a gas. Estar con comedor, TV Led con DVD (películas a disposición) y Direct TV. Galería de 3 x 4 metros con parrilla. La casa está acondicionada con ventiladores de techo en todos los ambientes: dormitorio y estar, mosquiteros en todas las ventanas y caja de seguridad.</p>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <p>Capacidad: de 2 hasta 4 personas</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                        </div>
+                    </div>
+                    <button class="btn btn-lg btn-info" data-toggle="modal" data-target="#cabana-2-fotos-modal">Ver imagenes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--CONSULTA DISPONIBILIDAD-->
+
+    <footer id="contacto">
+        <div class="container-fluid">
+            <div class="row pt-5 ml-5 mr-5 pb-5">
+                <div class="col-md-3 col-sm-3 col-12">
+                    <h4 style="color: white;">Contacto</h4>
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 col-1">
+                                <i style="color: white;" class="fas fa-map-marker-alt fa-lg"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-11">
+                                <p style="color: white;"><a href="https://www.google.com/maps?ll=-31.799433,-64.979810" target="_blank"> Cordoba - Nono - Cuatro Vientos</a></p>    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 col-1">
+                                <i style="color: white;" class="fab fa-whatsapp fa-lg"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-11">
+                                <p style="color: white;"><a href="https://api.whatsapp.com/send?phone=5491151811816" target="_blank"> (011)15-5181-1816</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 col-1">
+                                <i style="color: white;" class="far fa-envelope fa-lg"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-11">
+                                <p style="color: white;"><a href="mailto:cuatrovientosnono@gmail.com"> cuatrovientosnono@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-12">
+                    <h4 style="color: white;">¿Como llegar?</h4>
+                    <p style="color: white;">Desde Nono tomar el camino al Museo Rocsen por “Avenida Los Porteños&quot;. Pasando 100 metros el &quot;Balneario Los Remansos&quot;, doblar a la derecha en la bifurcación Cartel “La Quinta”,y a 70m mano izquierda se encuentra la entrada.</p>
+                    <a data-toggle="modal" data-target="#como-llegar-modal">    
+                        <img src="static/img/comollegar.jpg" style="width: 100%;">
+                    </a>
+                    <p style="color: white;">Coordenadas: -31.799433,-64.979810</p>
+                </div>
+            </div>
+        </div>        
+    </footer>
+
+    <!-- MODALS -->
+        <!--CABAÑA 1 PRINCIPAL-->
+            <div class="modal fade" id="cabana-1-principal-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                    <img src="static/img/cabana1.jpg" class="img-fluid rounded">
+                </div>
+            </div>
+
+        <!--CABAÑA 2 PRINCIPAL-->
+        <div class="modal fade" id="cabana-2-principal-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <img src="static/img/cabana2.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+
+        <!-- CABAÑA 1 FOTOS -->
+        <div class="modal fade" id="cabana-1-fotos-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="overflow-y: scroll;">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Galeria de fotos Cabaña 1 y 4</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="card-columns" id="galeria-cabana-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--COMO LLEGAR-->
+        <div class="modal fade" id="como-llegar-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <img src="static/img/comollegar.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <!-- CABAÑA 2 FOTOS -->
+        <div class="modal fade" id="cabana-2-fotos-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="overflow-y: scroll;">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Galeria de fotos Cabañas 2 y 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="card-columns" id="galeria-cabana-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PREDIO FOTOS -->
+        <div class="modal fade" id="predio-fotos-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="overflow-y: scroll;">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Galeria de fotos del lugar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="card-columns" id="galeria-predio">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIO FOTOS -->
+        <div class="modal fade" id="rio-fotos-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="overflow-y: scroll;">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Galeria de fotos Balnearios</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="card-columns" id="galeria-rio">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- BOOTSTRAP 4 SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- SCRIPTS -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+    });
+    </script>
+
+    <script src="static/js/home.js"></script>
+
+</body>
+</html>
