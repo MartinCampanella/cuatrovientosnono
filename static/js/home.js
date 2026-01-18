@@ -90,7 +90,39 @@ function loadGaleriaRio(){
     }
 }
 
-loadGaleriaCabana1()
-loadGaleriaCabana2()
-loadGaleriaRio()
-loadGaleriaPredio()
+// Flags para rastrear si las galerías ya fueron cargadas
+var galeriasLoaded = {
+    cabana1: false,
+    cabana2: false,
+    rio: false,
+    predio: false
+};
+
+// Event listeners para cargar las galerías solo cuando se abren los modales
+$('#cabana-1-fotos-modal').on('show.bs.modal', function () {
+    if (!galeriasLoaded.cabana1) {
+        loadGaleriaCabana1();
+        galeriasLoaded.cabana1 = true;
+    }
+});
+
+$('#cabana-2-fotos-modal').on('show.bs.modal', function () {
+    if (!galeriasLoaded.cabana2) {
+        loadGaleriaCabana2();
+        galeriasLoaded.cabana2 = true;
+    }
+});
+
+$('#rio-fotos-modal').on('show.bs.modal', function () {
+    if (!galeriasLoaded.rio) {
+        loadGaleriaRio();
+        galeriasLoaded.rio = true;
+    }
+});
+
+$('#predio-fotos-modal').on('show.bs.modal', function () {
+    if (!galeriasLoaded.predio) {
+        loadGaleriaPredio();
+        galeriasLoaded.predio = true;
+    }
+});
